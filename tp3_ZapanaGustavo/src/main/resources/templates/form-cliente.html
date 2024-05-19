@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Formulario</title>
+   <link rel="stylesheet" href="/css/estilos.css"></link>
+</head>
+<body class="fondo">
+    <header id="header">
+        <h1>Programación Visual</h1>
+    </header>
+    
+    <nav>
+      <h2 class="clase1">Menu:</h2>
+      <ul> 
+           <li class="clase3"><a href="/index">Volver al Inicio</a></li>
+      </ul>    
+    </nav>
+    
+    <main class="clase1">
+       <h2>Formulario</h2>
+         <form>
+           <label for="dni">DNI:</label>
+           <input id="dni" type="number" required placeholder="Ingresar N° sin puntos" name="dni"><br>
+           
+           <label for="nombres">Nombre:</label>
+           <input id="nombres" type="text" required placeholder="Ingresar nombre" name="nombre"><br>
+           
+           <label for="apellido">Apellido:</label>
+           <input id="apellido" type="text" required placeholder="Ingresar apellido" name="apellido"><br>
+           
+           <label for="fechaDeNac">Fecha de Nacimiento:</label>
+           <input id="fechaDeNac" type="date" required placeholder="Ingresar Fecha de Nacimiento" name="FechaNac"><br>
+           
+           
+            <label for="genero">Genero:</label><br>
+            <label for="genM">Masculino</label>
+            <input id="genM" type="radio" value="masculino" name="genero" required><br>
+            <label for="genF">Femenino</label>
+            <input id="genF" type="radio" value="femenino" name="genero"><br>
+            <label for="genX">X</label>
+            <input id="genX" type="radio" value="x" name="genero"><br>
+        
+             <label for="correoE">Correo Electronico:</label>
+            <input id="correoE" type="email" required placeholder="Ingresar Email" name="correo"><br> 
+            
+            <label for="domicilio">Domicilio:</label>
+            <input id="domicilio" type="text" required placeholder="Ingresar Domicilio" name="domicilio"><br>
+            
+              <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia" required>
+                <option value="jujuy"selected>Jujuy</option>
+                <option value="salta">Salta</option>
+                <option value="tucuman">Tucuman</option>
+                <option value="SgoDelEstero">Sgo. del Estero</option>
+                <option value="cordoba">Cordoba</option>
+                <option value="buenosAires">Buenos Aires</option>
+            </select><br>
+            
+            <label for="telefono">Telefono:</label>
+            <input id="telefono" type="number" placeholder="Ingresar Número Celular" name="telefono"><br>
+            
+            <label>Categorias de Interes</label>
+            <div>
+                <label for="Religion">Religion</label>
+                <input id="religioso" type="checkbox" name="intereses"><br>
+                <label for="deporte">Deporte</label>
+                <input id="futbol" type="checkbox" name="intereses"><br>
+                <label for="gastronomia">Gastronomía</label>
+                <input id="gastronomia" type="checkbox" name="intereses"><br>
+                <label for="turismo">Turismo</label>
+                <input id="turismo" type="checkbox" name="intereses"><br>
+            </div><br>
+            
+           <label for="sugerencia">Sugerencias:</label><br>
+            <textarea id="sugerencia" placeholder="Ingresar sugerencias" name="sugerencias" rows="9" cols="30"></textarea><br>
+
+            <label for="contraseña">Contraseña</label>
+            <input id="contraseña" type="password" required placeholder="Ingresar Contraseña" name="contraseña" minlength="8"><br>
+            <label for="contraseñaConfirmar">Confirme su Contraseña</label>
+            <input id="contraseñaConfirmar" type="password" required placeholder="Ingresar Contraseña Nuevamente" name="contraseñaConfirmar" minlength="8"><br>
+
+            <label for="tyc">Terminos y Condiciones</label>
+            <input id="tyc" type="checkbox" required name="tyc"><br>
+            <label for="info">Recibir Información Relativa a la Empresa</label>
+            <input id="info" type="checkbox" name="info"><br>
+
+            <br><input type="submit" value="Guardar">
+            <input type="button" value="Cancelar"><br>
+        
+         </form>
+    </main>
+
+    <footer id="footer">
+        <ul>
+            <li>Correo electrónico: info@fi.unju.edu.ar</li>
+            <li><a href="https://www.instagram.com/fiunju/">Instagram</a></li>
+            <li><a href ="https://www.facebook.com/fiunju/">Facebook</a></li>                      
+        </ul>
+    </footer>
+
+
+</body>
+</html>
